@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+    <body>
+        <div class="w-9/12 rounded-lg bg-black text-sky-50 m-auto mt-20">
+            <div class="header flex justify-between mx-10 pt-5 text-lg">
+                <div class="hover:cursor-pointer again">Again</div>
+                <p>Guess any number between 1 and 20</p>
+            </div>
+            <div class="flex justify-center mt-10">
+                <div
+                    class="num box w-24 h-24 text-center bg-gray-800 rounded-lg font-bold text-xl"
+                >
+                    ?
+                </div>
+            </div>
+            <div class="footer flex justify-evenly pb-32 mt-20">
+                <input
+                    class="input bg-slate-700 pr-10"
+                    type="text"
+                    placeholder="your guess number"
+                />
+                <button class="btn bg-green-700 px-10 rounded check">
+                    Check
+                </button>
+                <div>
+                    <p class="hover:cursor-pointer head">Start Game:</p>
+                    <p>Attemps: <span class="attemp">20</span></p>
+                    <p>Record: <span class="recod">0</span></p>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
